@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <script data-ionic="inject">
     (function(w){var i=w.Ionic=w.Ionic||{};i.version='3.9.2';i.angular='5.2.10';i.staticDir='build/';})(window);
@@ -21,22 +22,27 @@
   <!-- cordova.js required for cordova apps (remove if not needed) -->
   <script src="cordova.js"></script>
 
-  <!-- un-comment this code to enable service worker
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')
         .then(() => console.log('service worker installed'))
         .catch(err => console.error('Error', err));
     }
-  </script>-->
+  </script>
 
   <link href="build/main.css" rel="stylesheet">
 
 </head>
+
 <body>
 
   <!-- Ionic's root component and where the app will load -->
   <ion-app></ion-app>
+
+  <noscript>
+    <h1>Erro!</h1>
+    <p>Este navegador que você está usando, não oferece suporte para Javascript ou isto está desabilitado.</p>
+  </noscript>
 
   <!-- The polyfills js is generated during the build process -->
   <script src="build/polyfills.js"></script>
@@ -49,4 +55,5 @@
   <script src="build/main.js"></script>
 
 </body>
+
 </html>
